@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BaseProjectille : MonoBehaviour
 {
+    public float speed = 0.5f;
+    public 
+        
     // Start is called before the first frame update
     void Start()
     {
