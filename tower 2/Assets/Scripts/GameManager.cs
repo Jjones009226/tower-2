@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject bomb;
     public GameObject enemy;
-    public GameObject enemyTargeted;
+    //public GameObject enemyTargeted;
 
     public TextMeshProUGUI moneyDisplay;
 
@@ -60,13 +60,13 @@ public class GameManager : MonoBehaviour
             Instantiate(enemy, targetPos, Quaternion.identity);
         }
 
-        if (enemyTimer2 > spawnInterval2)
+       /* if (enemyTimer2 > spawnInterval2)
         {
             enemyTimer2 = 0f;
             Instantiate(enemyTargeted, targetPos, Quaternion.identity);
-        }
+        }*/
 
-        moneyDisplay.text = "Money: " + money;
+        //moneyDisplay.text = "Money: " + money;
 
         tower = GameObject.FindWithTag("Tower");
         if (tower == null)
